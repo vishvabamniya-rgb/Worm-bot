@@ -8,8 +8,8 @@ CONFIG_FILE = "bot_config.json"
 DB_FILE = "exodusgpt.db"
 
 # Secrets from .env
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8469458379:AAH0-S2YIfEmHdOUtP2eVr1sBSLgiCMC4Ew")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
 
 if not BOT_TOKEN:
     print("⚠️ WARNING: BOT_TOKEN is missing in .env")
