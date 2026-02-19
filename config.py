@@ -17,20 +17,20 @@ if not OPENROUTER_API_KEY:
     print("⚠️ WARNING: OPENROUTER_API_KEY is missing in .env")
 
 DEFAULT_CONFIG = {
-    "must_join_channels": [
-        {"name": "SHADOW_LEGION_2", "url": "https://t.me/SHADOW_LEGION_2"},
-        {"name": "Access_required", "url": "https://t.me/Access_required"},
-        {"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
-        {"name": "Crack_tools", "url": "https://t.me/exodus_inventory"},
-        {"name": "YouTube", "url": "https://youtube.com/@exodus-m1i"},
-        {"name": "AbdulBotzOfficial", "url": "https://t.me/AbdulBotzOfficial"}
+    #"must_join_channels": [
+        #{"name": "SHADOW_LEGION_2", "url": "https://t.me/SHADOW_LEGION_2"},
+        #{"name": "Access_required", "url": "https://t.me/Access_required"},
+        #{"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
+        #{"name": "Crack_tools", "url": "https://t.me/exodus_inventory"},
+        #{"name": "YouTube", "url": "https://youtube.com/@exodus-m1i"},
+        {"name": "AbdulBotzOfficial", "url": "https://t.me/rickcoder007"}
     ],
-    "admin_ids": [6831272320],
-    "users_channel": "exodusgpt_users",
+    "admin_ids": [7752941299],
+    "users_channel": "rickcoder007",
     "api_referrals_required": 20,
     "bot_referrals_required": 200,
     "access_hours": 24,
-    "bot_username": "ExodusGPT_Bot",
+    "bot_username": "goldeneagletesterbot",
     "ai_model": "google/gemini-3-flash-preview"
 }
 
@@ -55,9 +55,9 @@ def save_config(config_data):
 config = load_config()
 
 # Extract common values for easy access
-ADMIN_IDS = config.get("admin_ids", [6831272320])
+ADMIN_IDS = config.get("admin_ids", [7752941299])
 MUST_JOIN_CHANNELS = config.get("must_join_channels", [])
-USERS_CHANNEL = config.get("users_channel", "exodusgpt_users")
+USERS_CHANNEL = config.get("users_channel", "rickcoder007")
 API_REFERRALS_REQUIRED = config.get("api_referrals_required", 20)
 BOT_REFERRALS_REQUIRED = config.get("bot_referrals_required", 200)
 ACCESS_HOURS = config.get("access_hours", 24)
