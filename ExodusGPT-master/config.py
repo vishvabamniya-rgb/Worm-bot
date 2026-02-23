@@ -18,7 +18,7 @@ if not OPENROUTER_API_KEY:
 
 DEFAULT_CONFIG = {
     "must_join_channels": [
-        {"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
+        {"name": "darknyteexodus", "url": "https://t.me/sujaltest"},
     ],
     "admin_ids": [7566796700],
     "users_channel": "exodusgpt_users",
