@@ -8,7 +8,7 @@ CONFIG_FILE = "bot_config.json"
 DB_FILE = "exodusgpt.db"
 
 # Secrets from .env
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8469458379:AAH0-S2YIfEmHdOUtP2eVr1sBSLgiCMC4Ew")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8743809374:AAFpi4RnnWlsbozjvZ1ja4ye3XdUpAV02Ms")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
 
 if not BOT_TOKEN:
@@ -23,14 +23,14 @@ DEFAULT_CONFIG = {
         #{"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
         #{"name": "Crack_tools", "url": "https://t.me/exodus_inventory"},
         #{"name": "YouTube", "url": "https://youtube.com/@exodus-m1i"},
-        {"name": "AbdulBotzOfficial", "url": "https://t.me/rickcoder007"}
+        {"name": "AbdulBotzOfficial", "url": "https://t.me/sujaltest"}
     ],
     "admin_ids": [7752941299],
-    "users_channel": "rickcoder007",
+    "users_channel": "erinxlevi",
     "api_referrals_required": 20,
     "bot_referrals_required": 200,
     "access_hours": 24,
-    "bot_username": "goldeneagletesterbot",
+    "bot_username": "testycvbot",
     "ai_model": "google/gemini-3-flash-preview"
 }
 
