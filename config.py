@@ -7,22 +7,22 @@ load_dotenv()
 CONFIG_FILE = "bot_config.json"
 DB_FILE = "exodusgpt.db"
 
-# Secrets from .env
+# Secrets from .env (Render me Environment Variables me set karo)
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8743809374:AAFpi4RnnWlsbozjvZ1ja4ye3XdUpAV02Ms")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
 
 if not BOT_TOKEN:
-    print("⚠️ WARNING: BOT_TOKEN is missing in .env")
+    print("⚠️ WARNING: BOT_TOKEN is missing in .env / environment variables")
 if not OPENROUTER_API_KEY:
-    print("⚠️ WARNING: OPENROUTER_API_KEY is missing in .env")
+    print("⚠️ WARNING: OPENROUTER_API_KEY is missing in .env / environment variables")
 
 DEFAULT_CONFIG = {
-    #"must_join_channels": [
-        #{"name": "SHADOW_LEGION_2", "url": "https://t.me/SHADOW_LEGION_2"},
-        #{"name": "Access_required", "url": "https://t.me/Access_required"},
-        #{"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
-        #{"name": "Crack_tools", "url": "https://t.me/exodus_inventory"},
-        #{"name": "YouTube", "url": "https://youtube.com/@exodus-m1i"},
+    "must_join_channels": [
+        # {"name": "SHADOW_LEGION_2", "url": "https://t.me/SHADOW_LEGION_2"},
+        # {"name": "Access_required", "url": "https://t.me/Access_required"},
+        # {"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
+        # {"name": "Crack_tools", "url": "https://t.me/exodus_inventory"},
+        # {"name": "YouTube", "url": "https://youtube.com/@exodus-m1i"},
         {"name": "AbdulBotzOfficial", "url": "https://t.me/sujaltest"}
     ],
     "admin_ids": [7752941299],
@@ -37,19 +37,19 @@ DEFAULT_CONFIG = {
 def load_config():
     if os.path.exists(CONFIG_FILE):
         try:
-            with open(CONFIG_FILE, 'r') as f:
+            with open(CONFIG_FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
         except Exception:
             pass
-    
-    # Save default if not exists
-    with open(CONFIG_FILE, 'w') as f:
-        json.dump(DEFAULT_CONFIG, f, indent=2)
+
+    # Save default if not exists / invalid
+    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(DEFAULT_CONFIG, f, indent=2, ensure_ascii=False)
     return DEFAULT_CONFIG
 
 def save_config(config_data):
-    with open(CONFIG_FILE, 'w') as f:
-        json.dump(config_data, f, indent=2)
+    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
+        json.dump(config_data, f, indent=2, ensure_ascii=False)
 
 # Global config object
 config = load_config()
