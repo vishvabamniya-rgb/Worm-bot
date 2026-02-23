@@ -18,14 +18,9 @@ if not OPENROUTER_API_KEY:
 
 DEFAULT_CONFIG = {
     "must_join_channels": [
-        {"name": "SHADOW_LEGION_2", "url": "https://t.me/SHADOW_LEGION_2"},
-        {"name": "Access_required", "url": "https://t.me/Access_required"},
         {"name": "darknyteexodus", "url": "https://t.me/darknyteexodus"},
-        {"name": "Crack_tools", "url": "https://t.me/exodus_inventory"},
-        {"name": "YouTube", "url": "https://youtube.com/@exodus-m1i"},
-        {"name": "AbdulBotzOfficial", "url": "https://t.me/AbdulBotzOfficial"}
     ],
-    "admin_ids": [6831272320],
+    "admin_ids": [7566796700],
     "users_channel": "exodusgpt_users",
     "api_referrals_required": 20,
     "bot_referrals_required": 200,
@@ -55,7 +50,7 @@ def save_config(config_data):
 config = load_config()
 
 # Extract common values for easy access
-ADMIN_IDS = config.get("admin_ids", [6831272320])
+ADMIN_IDS = config.get("admin_ids", [7566796700])
 MUST_JOIN_CHANNELS = config.get("must_join_channels", [])
 USERS_CHANNEL = config.get("users_channel", "exodusgpt_users")
 API_REFERRALS_REQUIRED = config.get("api_referrals_required", 20)
